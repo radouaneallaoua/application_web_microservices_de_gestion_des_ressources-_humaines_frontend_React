@@ -1,38 +1,77 @@
 .App {
-  text-align: center;
+ font-family: Barlow,sans-serif;
+}
+.formation:hover {
+  border: 1px solid rgba(44, 44, 233, 0.526);
+  cursor: pointer;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.loginInput{
+  background-color: rgba(128, 128, 128, 0.56);
+  border: #0f82f6 2px solid;
   color: white;
 }
+.loginInput:focus{
+    border: #0f82f6 2px solid;
+} 
+.loginInput::placeholder{
+  color: rgb(196, 193, 193);
+  
+}
+.employe-dashboard{
+ background-color: #a3a5ac40;
+}
+.offres {
+  background-image: linear-gradient(45deg,  rgb(180, 43, 180),rgba(65, 65, 253, 0.529));
+}
+.formation-dashboard,.special {
+  background-image: linear-gradient(60deg, #7878c852,#7cbdff50);
+}
+.noti{
+  transform: rotate(-15deg);
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(30%);
+  }
 
-.App-link {
-  color: #61dafb;
+  to {
+    transform: translateY(-10%);
+  }
+}
+.logout{
+  text-decoration: none;
+}
+.ops {
+  font-size: 70px;
+  transform: rotate(60deg);
+  position: relative;
+  left: 300px;
+  animation: slideIn 2s infinite ease-out;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.itemDark:hover{
+  background-color: #262F37;
+}
+
+.sticky{
+  position: -webkit-sticky;
+  top: 70;
+  z-index: 1000;
+}
+
+.sidebar {
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar width */
+  background: transparent;
+  /* Optional: Make scrollbar background transparent */
 }
